@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aguirre_cristian">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.aguirre_cristian">
+        <activity android:name="com.example.aguirre_cristian.ActivityVollyAlumno"></activity>
+        <activity android:name="com.example.aguirre_cristian.ActivityBDDocente" />
+        <activity android:name="com.example.aguirre_cristian.ActividadMemoriaSD" />
+        <activity android:name="com.example.aguirre_cristian.ActivityMemoriaPrograma" />
+        <activity
+            android:name="com.example.aguirre_cristian.ActividadMemoriaInterna"
+            android:label="@string/title_activity_actividad_memoria_interna"
+            android:theme="@style/Theme.aguirre_cristian.NoActionBar" />
+        <activity
+            android:name="com.example.aguirre_cristian.Activity_Principal"
+            android:label="@string/title_activity__principal"
+            android:theme="@style/Theme.aguirre_cristian.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.aguirre_cristian.ui.login.ActivityLogin"
+            android:label="@string/title_activity_login" />
+        <activity android:name="com.example.aguirre_cristian.ActividadFragmentos" />
+        <activity android:name="com.example.aguirre_cristian.ActivityNombres" />
+        <activity android:name="com.example.aguirre_cristian.MainActivity" />
+    </application>
+
+</manifest>
